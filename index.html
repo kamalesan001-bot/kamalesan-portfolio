@@ -2,64 +2,109 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Kamalesan K - Bachelor of Computer Science Student Portfolio">
 
     <title>Kamalesan K | Portfolio</title>
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
 
     <!-- Font Awesome -->
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <!-- Main CSS -->
+
+    <link rel="stylesheet"
+          href="style.css">
+
 </head>
+
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+
+    <!-- ==================================================
+                         NAVIGATION
+    =================================================== -->
 
     <header class="header">
 
-        <a href="#home" class="logo">
+        <a href="#home"
+           class="logo">
+
             K<span>.</span>
+
         </a>
 
-        <nav class="nav-links" id="navLinks">
 
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#education">Education</a>
-            <a href="#contact">Contact</a>
+        <nav class="navbar"
+             id="navbar">
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#skills">
+                Skills
+            </a>
+
+            <a href="#projects">
+                Projects
+            </a>
+
+            <a href="#education">
+                Education
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
 
         </nav>
 
-        <div class="nav-buttons">
 
-            <button
-                class="theme-btn"
-                id="themeBtn"
-                aria-label="Toggle dark mode">
+        <div class="nav-actions">
+
+            <!-- Dark / Light Mode -->
+
+            <button id="theme-toggle"
+                    class="icon-btn"
+                    aria-label="Toggle dark and light mode">
 
                 <i class="fas fa-moon"></i>
 
             </button>
 
-            <button
-                class="menu-btn"
-                id="menuBtn"
-                aria-label="Open menu">
+
+            <!-- Mobile Menu -->
+
+            <button id="menu-toggle"
+                    class="icon-btn menu-btn"
+                    aria-label="Open navigation menu">
 
                 <i class="fas fa-bars"></i>
 
@@ -70,39 +115,60 @@
     </header>
 
 
-    <!-- ================= HOME ================= -->
 
-    <section class="hero section" id="home">
+    <!-- ==================================================
+                           HOME
+    =================================================== -->
+
+    <section class="hero section"
+             id="home">
+
 
         <div class="hero-content animate">
 
-            <p class="hero-subtitle">
-                HELLO, I'M
+            <p class="hero-small">
+                Hello, I'm
             </p>
+
 
             <h1>
-                KAMALESAN <span>K</span>
+                Kamalesan <span>K</span>
             </h1>
 
+
             <h2>
-                Web Developer & Computer Science Student
+                Bachelor of Computer Science Student
             </h2>
 
-            <p class="hero-description">
+
+            <p>
                 I am passionate about web development, programming
-                and creating modern, responsive and interactive websites
-                using HTML, CSS and JavaScript.
+                and problem solving. I enjoy creating responsive,
+                modern and user-friendly websites using web technologies.
             </p>
+
 
             <div class="hero-buttons">
 
-                <a href="#projects" class="btn primary-btn">
+
+                <a href="#projects"
+                   class="btn primary-btn">
+
+                    <i class="fas fa-code"></i>
+
                     View Projects
+
                 </a>
 
-                <a href="resume.pdf" download class="btn secondary-btn">
+
+                <a href="resume.pdf"
+                   download
+                   class="btn secondary-btn">
+
                     <i class="fas fa-download"></i>
+
                     Download Resume
+
                 </a>
 
             </div>
@@ -110,13 +176,13 @@
         </div>
 
 
+
         <div class="hero-image animate">
 
-            <div class="image-wrapper">
+            <div class="image-container">
 
-                <img
-                    src="profile.jpg"
-                    alt="Kamalesan K">
+                <img src="profile.jpg"
+                     alt="Kamalesan K">
 
             </div>
 
@@ -125,13 +191,20 @@
     </section>
 
 
-    <!-- ================= ABOUT ================= -->
 
-    <section class="about section" id="about">
+    <!-- ==================================================
+                           ABOUT
+    =================================================== -->
+
+    <section class="section"
+             id="about">
+
 
         <div class="section-title animate">
 
-            <p>GET TO KNOW ME</p>
+            <p>
+                Get To Know Me
+            </p>
 
             <h2>
                 About <span>Me</span>
@@ -140,74 +213,64 @@
         </div>
 
 
+
         <div class="about-container">
+
 
             <div class="about-text animate">
 
                 <h3>
-                    I'm a Computer Science Student
+                    Computer Science Student & Web Developer
                 </h3>
 
-                <p>
-                    I am Kamalesan K, a Computer Science student
-                    interested in web development and modern technologies.
-                </p>
 
                 <p>
-                    I enjoy learning programming concepts and building
-                    creative, responsive and interactive websites.
+                    I am a Bachelor of Computer Science student
+                    interested in web development and programming.
+                    I enjoy learning new technologies and building
+                    practical projects.
                 </p>
 
+
                 <p>
-                    My goal is to improve my technical skills and gain
-                    practical experience through real-world projects.
+                    My current skills include HTML, CSS, JavaScript
+                    and Python. I continuously improve my technical
+                    knowledge through projects and hands-on learning.
                 </p>
 
             </div>
 
 
-            <div class="about-cards">
 
-                <div class="about-card animate">
+            <div class="about-cards animate">
 
-                    <i class="fas fa-code"></i>
+
+                <div class="info-card">
+
+                    <i class="fas fa-laptop-code"></i>
 
                     <h3>
                         Web Development
                     </h3>
 
                     <p>
-                        Creating responsive and modern websites.
+                        Creating responsive and user-friendly websites.
                     </p>
 
                 </div>
 
 
-                <div class="about-card animate">
 
-                    <i class="fas fa-laptop-code"></i>
+                <div class="info-card">
+
+                    <i class="fas fa-code"></i>
 
                     <h3>
                         Programming
                     </h3>
 
                     <p>
-                        Learning programming and software development.
-                    </p>
-
-                </div>
-
-
-                <div class="about-card animate">
-
-                    <i class="fas fa-lightbulb"></i>
-
-                    <h3>
-                        Problem Solving
-                    </h3>
-
-                    <p>
-                        Interested in solving technical problems creatively.
+                        Developing solutions using programming concepts.
                     </p>
 
                 </div>
@@ -219,13 +282,20 @@
     </section>
 
 
-    <!-- ================= SKILLS ================= -->
 
-    <section class="skills section" id="skills">
+    <!-- ==================================================
+                           SKILLS
+    =================================================== -->
+
+    <section class="section"
+             id="skills">
+
 
         <div class="section-title animate">
 
-            <p>MY EXPERTISE</p>
+            <p>
+                My Technical Skills
+            </p>
 
             <h2>
                 My <span>Skills</span>
@@ -234,81 +304,85 @@
         </div>
 
 
-        <div class="skills-grid">
+
+        <div class="skills-container animate">
 
 
-            <div class="skill-card animate">
+            <!-- HTML -->
 
-                <div class="skill-icon html">
-                    <i class="fab fa-html5"></i>
+            <div class="skill-card">
+
+                <i class="fab fa-html5"></i>
+
+                <h3>
+                    HTML
+                </h3>
+
+                <div class="skill-bar">
+
+                    <span class="html"></span>
+
                 </div>
-
-                <h3>HTML</h3>
-
-                <p>Web Structure</p>
-
-                <div class="progress">
-                    <span style="width: 90%;"></span>
-                </div>
-
-                <small>90%</small>
 
             </div>
 
 
-            <div class="skill-card animate">
 
-                <div class="skill-icon css">
-                    <i class="fab fa-css3-alt"></i>
+            <!-- CSS -->
+
+            <div class="skill-card">
+
+                <i class="fab fa-css3-alt"></i>
+
+                <h3>
+                    CSS
+                </h3>
+
+                <div class="skill-bar">
+
+                    <span class="css"></span>
+
                 </div>
-
-                <h3>CSS</h3>
-
-                <p>Web Design</p>
-
-                <div class="progress">
-                    <span style="width: 85%;"></span>
-                </div>
-
-                <small>85%</small>
 
             </div>
 
 
-            <div class="skill-card animate">
 
-                <div class="skill-icon js">
-                    <i class="fab fa-js"></i>
+            <!-- JavaScript -->
+
+            <div class="skill-card">
+
+                <i class="fab fa-js"></i>
+
+                <h3>
+                    JavaScript
+                </h3>
+
+                <div class="skill-bar">
+
+                    <span class="javascript"></span>
+
                 </div>
-
-                <h3>JavaScript</h3>
-
-                <p>Interactive Web</p>
-
-                <div class="progress">
-                    <span style="width: 75%;"></span>
-                </div>
-
-                <small>75%</small>
 
             </div>
 
 
-            <div class="skill-card animate">
 
-                <div class="skill-icon python">
-                    <i class="fab fa-python"></i>
+            <!-- Python -->
+
+            <div class="skill-card">
+
+                <i class="fab fa-python"></i>
+
+                <h3>
+                    Python
+                </h3>
+
+                <div class="skill-bar">
+
+                    <span class="python"></span>
+
                 </div>
-
-                <h3>Python</h3>
-
-                <p>Programming</p>
-
-                <div class="progress">
-                    <span style="width: 70%;"></span>
-                </div>
-
-                <small>70%</small>
 
             </div>
 
@@ -317,13 +391,20 @@
     </section>
 
 
-    <!-- ================= PROJECTS ================= -->
 
-    <section class="projects section" id="projects">
+    <!-- ==================================================
+                          PROJECTS
+    =================================================== -->
+
+    <section class="section"
+             id="projects">
+
 
         <div class="section-title animate">
 
-            <p>MY WORK</p>
+            <p>
+                My Recent Work
+            </p>
 
             <h2>
                 My <span>Projects</span>
@@ -332,7 +413,8 @@
         </div>
 
 
-        <div class="projects-grid">
+
+        <div class="projects-container">
 
 
             <!-- PROJECT 1 -->
@@ -340,60 +422,52 @@
             <div class="project-card animate">
 
                 <div class="project-icon">
+
                     <i class="fas fa-globe"></i>
+
                 </div>
 
-                <div class="project-content">
 
-                    <span class="project-number">
-                        PROJECT 01
-                    </span>
+                <h3>
+                    Personal Portfolio Website
+                </h3>
 
-                    <h3>
-                        Personal Portfolio Website
-                    </h3>
 
-                    <p>
-                        A responsive personal portfolio website
-                        developed using HTML, CSS and JavaScript.
-                        It includes interactive navigation,
-                        dark mode and smooth animations.
-                    </p>
+                <p>
+                    A responsive personal portfolio website created
+                    using HTML, CSS and JavaScript. It includes
+                    projects, skills, education and contact details.
+                </p>
 
-                    <div class="project-tags">
 
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
+                <div class="project-buttons">
 
-                    </div>
 
-                    <div class="project-links">
+                    <a href="https://github.com/kamalesan001-bot/kamalesan-portfolio"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn small-btn">
 
-                        <a
-                            href="https://github.com/kamalesan001-bot/kamalesan-portfolio"
-                            target="_blank"
-                            class="project-btn">
+                        <i class="fab fa-github"></i>
 
-                            <i class="fab fa-github"></i>
-                            GitHub
+                        GitHub
 
-                        </a>
+                    </a>
 
-                        <a
-                            href="#"
-                            class="project-btn demo-btn">
 
-                            <i class="fas fa-external-link-alt"></i>
-                            Live Demo
+                    <a href="#"
+                       class="btn small-btn demo-btn">
 
-                        </a>
+                        <i class="fas fa-external-link-alt"></i>
 
-                    </div>
+                        Live Demo
+
+                    </a>
 
                 </div>
 
             </div>
+
 
 
             <!-- PROJECT 2 -->
@@ -401,58 +475,50 @@
             <div class="project-card animate">
 
                 <div class="project-icon">
+
                     <i class="fas fa-users"></i>
+
                 </div>
 
-                <div class="project-content">
 
-                    <span class="project-number">
-                        PROJECT 02
-                    </span>
+                <h3>
+                    Student Management System
+                </h3>
 
-                    <h3>
-                        Student Management System
-                    </h3>
 
-                    <p>
-                        A simple student management project
-                        designed to organize and manage
-                        student information efficiently.
-                    </p>
+                <p>
+                    A student management project designed to organize
+                    and manage student information using web development
+                    technologies.
+                </p>
 
-                    <div class="project-tags">
 
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
+                <div class="project-buttons">
 
-                    </div>
 
-                    <div class="project-links">
+                    <a href="#"
+                       class="btn small-btn">
 
-                        <a
-                            href="#"
-                            class="project-btn">
+                        <i class="fab fa-github"></i>
 
-                            <i class="fab fa-github"></i>
-                            GitHub
+                        GitHub
 
-                        </a>
+                    </a>
 
-                        <a
-                            href="#"
-                            class="project-btn demo-btn">
 
-                            <i class="fas fa-external-link-alt"></i>
-                            Live Demo
+                    <a href="#"
+                       class="btn small-btn demo-btn">
 
-                        </a>
+                        <i class="fas fa-external-link-alt"></i>
 
-                    </div>
+                        Live Demo
+
+                    </a>
 
                 </div>
 
             </div>
+
 
 
             <!-- PROJECT 3 -->
@@ -460,53 +526,45 @@
             <div class="project-card animate">
 
                 <div class="project-icon">
+
                     <i class="fab fa-python"></i>
+
                 </div>
 
-                <div class="project-content">
 
-                    <span class="project-number">
-                        PROJECT 03
-                    </span>
+                <h3>
+                    Python Mini Project
+                </h3>
 
-                    <h3>
-                        Python Mini Project
-                    </h3>
 
-                    <p>
-                        A beginner-friendly Python project
-                        created to practice programming,
-                        logic building and problem solving.
-                    </p>
+                <p>
+                    A Python-based mini project developed to practice
+                    programming concepts, logical thinking and
+                    problem solving.
+                </p>
 
-                    <div class="project-tags">
 
-                        <span>Python</span>
-                        <span>Programming</span>
+                <div class="project-buttons">
 
-                    </div>
 
-                    <div class="project-links">
+                    <a href="#"
+                       class="btn small-btn">
 
-                        <a
-                            href="#"
-                            class="project-btn">
+                        <i class="fab fa-github"></i>
 
-                            <i class="fab fa-github"></i>
-                            GitHub
+                        GitHub
 
-                        </a>
+                    </a>
 
-                        <a
-                            href="#"
-                            class="project-btn demo-btn">
 
-                            <i class="fas fa-external-link-alt"></i>
-                            Live Demo
+                    <a href="#"
+                       class="btn small-btn demo-btn">
 
-                        </a>
+                        <i class="fas fa-external-link-alt"></i>
 
-                    </div>
+                        Live Demo
+
+                    </a>
 
                 </div>
 
@@ -517,13 +575,20 @@
     </section>
 
 
-    <!-- ================= EDUCATION ================= -->
 
-    <section class="education section" id="education">
+    <!-- ==================================================
+                         EDUCATION
+    =================================================== -->
+
+    <section class="section"
+             id="education">
+
 
         <div class="section-title animate">
 
-            <p>MY ACADEMIC JOURNEY</p>
+            <p>
+                My Academic Background
+            </p>
 
             <h2>
                 <span>Education</span>
@@ -532,10 +597,11 @@
         </div>
 
 
+
         <div class="education-container">
 
 
-            <!-- EDUCATION 1 -->
+            <!-- COLLEGE -->
 
             <div class="education-card animate">
 
@@ -545,24 +611,27 @@
 
                 </div>
 
-                <div class="education-content">
 
-                    <span>
-                        UNDERGRADUATE
-                    </span>
+                <div>
 
                     <h3>
                         Bachelor of Computer Science
                     </h3>
 
+
                     <h4>
                         Manonmaniam Sundaranar University
                     </h4>
 
+
+                    <p>
+                        Tamil Nadu, India
+                    </p>
+
+
                     <p>
                         Studying Computer Science with an interest
-                        in web development, programming and
-                        modern technologies.
+                        in web development and programming.
                     </p>
 
                 </div>
@@ -570,7 +639,8 @@
             </div>
 
 
-            <!-- EDUCATION 2 -->
+
+            <!-- SCHOOL -->
 
             <div class="education-card animate">
 
@@ -580,32 +650,29 @@
 
                 </div>
 
-                <div class="education-content">
 
-                    <span>
-                        HIGHER SECONDARY
-                    </span>
+                <div>
 
                     <h3>
                         Higher Secondary Education
                     </h3>
 
+
                     <h4>
                         Tamil Nadu State Board
                     </h4>
 
+
                     <p>
-                        Completed higher secondary education
-                        with an interest in computer science
-                        and technology.
+                        Tamil Nadu, India
                     </p>
 
                 </div>
 
             </div>
 
-
         </div>
+
 
 
         <!-- RESUME -->
@@ -614,23 +681,21 @@
 
             <i class="fas fa-file-pdf"></i>
 
-            <div>
 
-                <h3>
-                    Want to know more about me?
-                </h3>
+            <h3>
+                Download My Resume
+            </h3>
 
-                <p>
-                    Download my resume to view my skills,
-                    education and experience.
-                </p>
 
-            </div>
+            <p>
+                View or download my resume for more information
+                about my education, skills and projects.
+            </p>
 
-            <a
-                href="resume.pdf"
-                download
-                class="btn primary-btn">
+
+            <a href="resume.pdf"
+               download
+               class="btn primary-btn">
 
                 <i class="fas fa-download"></i>
 
@@ -643,13 +708,20 @@
     </section>
 
 
-    <!-- ================= CONTACT ================= -->
 
-    <section class="contact section" id="contact">
+    <!-- ==================================================
+                         CONTACT
+    =================================================== -->
+
+    <section class="section"
+             id="contact">
+
 
         <div class="section-title animate">
 
-            <p>GET IN TOUCH</p>
+            <p>
+                Get In Touch
+            </p>
 
             <h2>
                 Contact <span>Me</span>
@@ -658,154 +730,243 @@
         </div>
 
 
+
+        <!-- ACTIVE SOCIAL LINKS -->
+
+        <div class="contact-cards animate">
+
+
+            <!-- GITHUB -->
+
+            <a href="https://github.com/kamalesan001-bot/kamalesan-portfolio"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="contact-card">
+
+                <i class="fab fa-github"></i>
+
+
+                <h3>
+                    GitHub
+                </h3>
+
+
+                <p>
+                    View my projects
+                </p>
+
+            </a>
+
+
+
+            <!-- LINKEDIN -->
+
+            <a href="https://www.linkedin.com/in/kamalesan-k-662019420"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="contact-card">
+
+                <i class="fab fa-linkedin"></i>
+
+
+                <h3>
+                    LinkedIn
+                </h3>
+
+
+                <p>
+                    Connect with me
+                </p>
+
+            </a>
+
+
+
+            <!-- EMAIL -->
+
+            <a href="mailto:gaminggalaxy434@gmail.com"
+               class="contact-card">
+
+                <i class="fas fa-envelope"></i>
+
+
+                <h3>
+                    Email
+                </h3>
+
+
+                <p>
+                    gaminggalaxy434@gmail.com
+                </p>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- CONTACT AREA -->
+
         <div class="contact-container">
 
 
+            <!-- CONTACT INFORMATION -->
+
             <div class="contact-info animate">
+
 
                 <h3>
                     Let's Connect
                 </h3>
 
+
                 <p>
-                    Have a question or want to work together?
-                    Send me a message.
+                    If you have any questions, project ideas or
+                    opportunities, feel free to contact me.
                 </p>
 
 
-                <div class="contact-item">
 
-                    <div class="contact-icon">
+                <!-- Email -->
 
-                        <i class="fas fa-envelope"></i>
+                <div class="contact-detail">
 
-                    </div>
+                    <i class="fas fa-envelope"></i>
 
-                    <div>
-
-                        <h4>Email</h4>
-
-                        <p>
-                            kamalesan001@gmail.com
-                        </p>
-
-                    </div>
+                    <span>
+                        gaminggalaxy434@gmail.com
+                    </span>
 
                 </div>
 
 
-                <div class="contact-item">
 
-                    <div class="contact-icon">
+                <!-- Location -->
 
-                        <i class="fas fa-phone"></i>
+                <div class="contact-detail">
 
-                    </div>
+                    <i class="fas fa-map-marker-alt"></i>
 
-                    <div>
-
-                        <h4>Phone</h4>
-
-                        <p>
-                            9384755435
-                        </p>
-
-                    </div>
+                    <span>
+                        Tamil Nadu, India
+                    </span>
 
                 </div>
 
 
-                <div class="contact-item">
 
-                    <div class="contact-icon">
+                <!-- GitHub -->
 
-                        <i class="fas fa-location-dot"></i>
+                <div class="contact-detail">
 
-                    </div>
+                    <i class="fab fa-github"></i>
 
-                    <div>
+                    <a href="https://github.com/kamalesan001-bot/kamalesan-portfolio"
+                       target="_blank"
+                       rel="noopener noreferrer">
 
-                        <h4>Location</h4>
+                        GitHub Profile
 
-                        <p>
-                            Tamil Nadu, India
-                        </p>
+                    </a>
 
-                    </div>
+                </div>
+
+
+
+                <!-- LinkedIn -->
+
+                <div class="contact-detail">
+
+                    <i class="fab fa-linkedin"></i>
+
+                    <a href="https://www.linkedin.com/in/kamalesan-k-662019420"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
+                        LinkedIn Profile
+
+                    </a>
 
                 </div>
 
             </div>
 
 
+
             <!-- CONTACT FORM -->
 
-            <form
-                class="contact-form animate"
-                id="contactForm"
-                novalidate>
+            <form id="contact-form"
+                  class="contact-form animate"
+                  novalidate>
 
 
-                <div class="input-group">
+                <!-- Name -->
+
+                <div class="form-group">
 
                     <label for="name">
                         Name
                     </label>
 
-                    <input
-                        type="text"
-                        id="name"
-                        placeholder="Enter your name">
 
-                    <small
-                        class="error"
-                        id="nameError">
-                    </small>
+                    <input type="text"
+                           id="name"
+                           name="name"
+                           placeholder="Enter your name">
+
+
+                    <small id="name-error"></small>
 
                 </div>
 
 
-                <div class="input-group">
+
+                <!-- Email -->
+
+                <div class="form-group">
 
                     <label for="email">
                         Email
                     </label>
 
-                    <input
-                        type="email"
-                        id="email"
-                        placeholder="Enter your email">
 
-                    <small
-                        class="error"
-                        id="emailError">
-                    </small>
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           placeholder="Enter your email">
+
+
+                    <small id="email-error"></small>
 
                 </div>
 
 
-                <div class="input-group">
+
+                <!-- Message -->
+
+                <div class="form-group">
 
                     <label for="message">
                         Message
                     </label>
 
-                    <textarea
-                        id="message"
-                        rows="6"
-                        placeholder="Enter your message"></textarea>
 
-                    <small
-                        class="error"
-                        id="messageError">
-                    </small>
+                    <textarea id="message"
+                              name="message"
+                              rows="6"
+                              placeholder="Enter your message"></textarea>
+
+
+                    <small id="message-error"></small>
 
                 </div>
 
 
-                <button
-                    type="submit"
-                    class="btn primary-btn">
+
+                <!-- Submit -->
+
+                <button type="submit"
+                        class="btn primary-btn">
 
                     <i class="fas fa-paper-plane"></i>
 
@@ -814,10 +975,9 @@
                 </button>
 
 
-                <p
-                    class="success-message"
-                    id="successMessage">
-                </p>
+                <!-- Success Message -->
+
+                <p id="form-success"></p>
 
             </form>
 
@@ -826,34 +986,90 @@
     </section>
 
 
-    <!-- ================= FOOTER ================= -->
 
-    <footer>
+    <!-- ==================================================
+                           FOOTER
+    =================================================== -->
+
+    <footer class="footer">
+
 
         <div class="footer-content">
 
-            <a href="#home" class="logo">
-                K<span>.</span>
-            </a>
+
+            <h3>
+                Kamalesan K
+            </h3>
+
+
+            <p>
+                Bachelor of Computer Science Student
+            </p>
+
+
+
+            <!-- SOCIAL LINKS -->
+
+            <div class="social-links">
+
+
+                <!-- GitHub -->
+
+                <a href="https://github.com/kamalesan001-bot/kamalesan-portfolio"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="GitHub">
+
+                    <i class="fab fa-github"></i>
+
+                </a>
+
+
+
+                <!-- LinkedIn -->
+
+                <a href="https://www.linkedin.com/in/kamalesan-k-662019420"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="LinkedIn">
+
+                    <i class="fab fa-linkedin"></i>
+
+                </a>
+
+
+
+                <!-- Email -->
+
+                <a href="mailto:gaminggalaxy434@gmail.com"
+                   aria-label="Email">
+
+                    <i class="fas fa-envelope"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="footer-bottom">
 
             <p>
                 © 2026 Kamalesan K. All Rights Reserved.
             </p>
-
-            <a
-                href="#home"
-                class="top-btn">
-
-                <i class="fas fa-arrow-up"></i>
-
-            </a>
 
         </div>
 
     </footer>
 
 
-    <!-- JavaScript -->
+
+    <!-- ==================================================
+                        JAVASCRIPT
+    =================================================== -->
+
     <script src="script.js"></script>
 
 </body>
