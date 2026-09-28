@@ -1,116 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Kamalesan K | Portfolio</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <header>
-        <nav class="navbar">
-            <h2 class="logo">Kamalesan K</h2>
+    <!-- ================= HEADER ================= -->
 
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <header class="header">
+
+        <a href="#home" class="logo">
+            K<span>.</span>
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+
         </nav>
+
+        <div class="nav-buttons">
+
+            <!-- Dark / Light Mode -->
+            <button
+                class="theme-btn"
+                id="themeBtn"
+                aria-label="Toggle dark mode">
+
+                <i class="fas fa-moon"></i>
+
+            </button>
+
+            <!-- Mobile Menu -->
+            <button
+                class="menu-btn"
+                id="menuBtn"
+                aria-label="Open menu">
+
+                <i class="fas fa-bars"></i>
+
+            </button>
+
+        </div>
+
     </header>
 
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
+    <!-- ================= HOME ================= -->
 
-        <div class="hero-text">
+    <section class="hero section" id="home">
 
-            <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+        <div class="hero-content animate">
 
-            <h1>Hi, I'm <span>Kamalesan K</span></h1>
-
-            <h2>B.Sc Computer Science Student</h2>
-
-            <p>
-                I am a passionate computer science student interested in
-                web development, programming and technology.
+            <p class="hero-subtitle">
+                HELLO, I'M
             </p>
 
-            <a href="#contact" class="btn">Contact Me</a>
+            <h1>
+                KAMALESAN <span>K</span>
+            </h1>
+
+            <h2>
+                Web Developer & Computer Science Student
+            </h2>
+
+            <p class="hero-description">
+                I am passionate about web development, programming
+                and creating modern, responsive and interactive websites
+                using HTML, CSS and JavaScript.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#contact" class="btn primary-btn">
+                    Contact Me
+                </a>
+
+                <a href="#skills" class="btn secondary-btn">
+                    View Skills
+                </a>
+
+            </div>
 
         </div>
 
 
-        <div class="hero-image">
-            <img src="profile.jpg" alt="Kamalesan K Profile Photo">
+        <div class="hero-image animate">
+
+            <div class="image-wrapper">
+
+                <img
+                    src="profile.jpg"
+                    alt="Kamalesan K">
+
+            </div>
+
         </div>
 
     </section>
 
 
-    <!-- About Section -->
-    <section id="about" class="section">
+    <!-- ================= ABOUT ================= -->
 
-        <h2>About Me</h2>
+    <section class="about section" id="about">
 
-        <div class="about-box">
+        <div class="section-title animate">
 
-            <p>
-                I am Kamalesan K, a B.Sc Computer Science student with an
-                interest in web development and software technology.
-            </p>
+            <p>GET TO KNOW ME</p>
 
-            <p>
-                I enjoy learning new technologies and building simple and
-                useful projects. My goal is to improve my programming skills
-                and develop creative solutions using modern technologies.
-            </p>
+            <h2>
+                About <span>Me</span>
+            </h2>
+
+        </div>
+
+
+        <div class="about-container">
+
+            <div class="about-text animate">
+
+                <h3>
+                    I'm a Computer Science Student
+                </h3>
+
+                <p>
+                    I am Kamalesan K, a Computer Science student
+                    interested in web development and modern technologies.
+                </p>
+
+                <p>
+                    I enjoy learning programming concepts and building
+                    creative, responsive and interactive websites.
+                </p>
+
+                <p>
+                    My goal is to improve my technical skills and gain
+                    practical experience through real-world projects.
+                </p>
+
+            </div>
+
+
+            <div class="about-cards">
+
+                <div class="about-card animate">
+
+                    <i class="fas fa-code"></i>
+
+                    <h3>
+                        Web Development
+                    </h3>
+
+                    <p>
+                        Creating responsive and modern websites.
+                    </p>
+
+                </div>
+
+
+                <div class="about-card animate">
+
+                    <i class="fas fa-laptop-code"></i>
+
+                    <h3>
+                        Programming
+                    </h3>
+
+                    <p>
+                        Learning programming and software development.
+                    </p>
+
+                </div>
+
+
+                <div class="about-card animate">
+
+                    <i class="fas fa-lightbulb"></i>
+
+                    <h3>
+                        Problem Solving
+                    </h3>
+
+                    <p>
+                        Interested in solving technical problems creatively.
+                    </p>
+
+                </div>
+
+            </div>
 
         </div>
 
     </section>
 
 
-    <!-- Skills Section -->
-    <section id="skills" class="section">
+    <!-- ================= SKILLS ================= -->
 
-        <h2>My Skills</h2>
+    <section class="skills section" id="skills">
 
-        <div class="skills-container">
+        <div class="section-title animate">
 
-            <div class="skill-card">
+            <p>MY EXPERTISE</p>
+
+            <h2>
+                My <span>Skills</span>
+            </h2>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+
+            <!-- HTML -->
+
+            <div class="skill-card animate">
+
+                <div class="skill-icon html">
+                    <i class="fab fa-html5"></i>
+                </div>
+
                 <h3>HTML</h3>
+
                 <p>
-                    Creating structured and semantic web pages.
+                    Web Structure
                 </p>
+
+                <div class="progress">
+
+                    <span style="width: 90%;"></span>
+
+                </div>
+
+                <small>
+                    90%
+                </small>
+
             </div>
 
 
-            <div class="skill-card">
+            <!-- CSS -->
+
+            <div class="skill-card animate">
+
+                <div class="skill-icon css">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+
                 <h3>CSS</h3>
+
                 <p>
-                    Designing attractive and user-friendly websites.
+                    Web Design
                 </p>
+
+                <div class="progress">
+
+                    <span style="width: 85%;"></span>
+
+                </div>
+
+                <small>
+                    85%
+                </small>
+
             </div>
 
 
-            <div class="skill-card">
-                <h3>Java</h3>
+            <!-- JavaScript -->
+
+            <div class="skill-card animate">
+
+                <div class="skill-icon js">
+                    <i class="fab fa-js"></i>
+                </div>
+
+                <h3>
+                    JavaScript
+                </h3>
+
                 <p>
-                    Basic object-oriented programming and application development.
+                    Interactive Web
                 </p>
+
+                <div class="progress">
+
+                    <span style="width: 75%;"></span>
+
+                </div>
+
+                <small>
+                    75%
+                </small>
+
             </div>
 
 
-            <div class="skill-card">
-                <h3>C++</h3>
+            <!-- Python -->
+
+            <div class="skill-card animate">
+
+                <div class="skill-icon python">
+                    <i class="fab fa-python"></i>
+                </div>
+
+                <h3>
+                    Python
+                </h3>
+
                 <p>
-                    Programming fundamentals and problem solving.
+                    Programming
                 </p>
+
+                <div class="progress">
+
+                    <span style="width: 70%;"></span>
+
+                </div>
+
+                <small>
+                    70%
+                </small>
+
             </div>
 
         </div>
@@ -118,38 +352,222 @@
     </section>
 
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
+    <!-- ================= CONTACT ================= -->
 
-        <h2>Contact Me</h2>
+    <section class="contact section" id="contact">
 
-        <div class="contact-box">
+        <div class="section-title animate">
 
-            <p>
-                <strong>Name:</strong> Kamalesan K
-            </p>
+            <p>GET IN TOUCH</p>
 
-            <p>
-                <strong>Email:</strong> kamalesan001@gmail.com
-            </p>
+            <h2>
+                Contact <span>Me</span>
+            </h2>
 
-            <p>
-                <strong>Phone:</strong> +91 9384755435
-            </p>
+        </div>
 
-            <p>
-                <strong>Location:</strong> Tamil Nadu, India
-            </p>
+
+        <div class="contact-container">
+
+
+            <!-- CONTACT INFORMATION -->
+
+            <div class="contact-info animate">
+
+                <h3>
+                    Let's Connect
+                </h3>
+
+                <p>
+                    Have a question or want to work together?
+                    Send me a message.
+                </p>
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+
+                    <div>
+
+                        <h4>
+                            Email
+                        </h4>
+
+                        <p>
+                            kamalesan001@gmail.com
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+
+                    <div>
+
+                        <h4>
+                            Phone
+                        </h4>
+
+                        <p>
+                            9384755435
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        <i class="fas fa-location-dot"></i>
+                    </div>
+
+                    <div>
+
+                        <h4>
+                            Location
+                        </h4>
+
+                        <p>
+                            Tamil Nadu, India
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTACT FORM -->
+
+            <form
+                class="contact-form animate"
+                id="contactForm"
+                novalidate>
+
+
+                <div class="input-group">
+
+                    <label for="name">
+                        Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your name">
+
+                    <small
+                        class="error"
+                        id="nameError">
+                    </small>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email">
+
+                    <small
+                        class="error"
+                        id="emailError">
+                    </small>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="message">
+                        Message
+                    </label>
+
+                    <textarea
+                        id="message"
+                        rows="6"
+                        placeholder="Enter your message">
+                    </textarea>
+
+                    <small
+                        class="error"
+                        id="messageError">
+                    </small>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn primary-btn">
+
+                    <i class="fas fa-paper-plane"></i>
+
+                    Send Message
+
+                </button>
+
+
+                <p
+                    class="success-message"
+                    id="successMessage">
+                </p>
+
+            </form>
 
         </div>
 
     </section>
 
 
-    <!-- Footer -->
+    <!-- ================= FOOTER ================= -->
+
     <footer>
-        <p>© 2026 Kamalesan K | My Portfolio</p>
+
+        <div class="footer-content">
+
+            <a href="#home" class="logo">
+                K<span>.</span>
+            </a>
+
+            <p>
+                © 2026 Kamalesan K. All Rights Reserved.
+            </p>
+
+            <a
+                href="#home"
+                class="top-btn">
+
+                <i class="fas fa-arrow-up"></i>
+
+            </a>
+
+        </div>
+
     </footer>
 
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
 </body>
+
 </html>
