@@ -102,6 +102,11 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
         const targetId =
             this.getAttribute("href");
 
+        if (targetId === "#") {
+            event.preventDefault();
+            return;
+        }
+
         const target =
             document.querySelector(targetId);
 
@@ -181,7 +186,6 @@ const emailInput =
 const messageInput =
     document.getElementById("message");
 
-
 const nameError =
     document.getElementById("nameError");
 
@@ -199,11 +203,10 @@ contactForm.addEventListener("submit", function (event) {
 
     event.preventDefault();
 
-
     let isValid = true;
 
 
-    /* Clear old errors */
+    /* CLEAR ERRORS */
 
     nameError.textContent = "";
 
@@ -221,7 +224,7 @@ contactForm.addEventListener("submit", function (event) {
     messageInput.classList.remove("error-input");
 
 
-    /* NAME */
+    /* NAME VALIDATION */
 
     if (nameInput.value.trim() === "") {
 
@@ -237,7 +240,7 @@ contactForm.addEventListener("submit", function (event) {
     }
 
 
-    /* EMAIL */
+    /* EMAIL VALIDATION */
 
     const emailPattern =
         /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -272,7 +275,7 @@ contactForm.addEventListener("submit", function (event) {
     }
 
 
-    /* MESSAGE */
+    /* MESSAGE VALIDATION */
 
     if (messageInput.value.trim() === "") {
 
@@ -311,5 +314,28 @@ contactForm.addEventListener("submit", function (event) {
         contactForm.reset();
 
     }
+
+});
+
+
+/* =========================================
+   PROJECT DEMO LINKS
+========================================= */
+
+document.querySelectorAll(".demo-btn").forEach(button => {
+
+    button.addEventListener("click", function (event) {
+
+        if (this.getAttribute("href") === "#") {
+
+            event.preventDefault();
+
+            alert(
+                "Live Demo is not available for this project yet."
+            );
+
+        }
+
+    });
 
 });
